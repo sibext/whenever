@@ -31,7 +31,7 @@ module Whenever
   end
 
   def self.update_cron options
-    o = { update: true, console: false}
+    o = { 'update' => true, 'console' => false}
     o.merge! options if options
     Whenever::CommandLine.execute o
   end
